@@ -1,0 +1,129 @@
+{
+  "features": [
+    {
+      "label": "ECG Monitor",
+      "name": "ecgMonitor",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Defibrillator",
+      "name": "defibrillator",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Ventilator Control",
+      "name": "ventilatorControl",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Infusion Pump",
+      "name": "infusionPump",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Anesthesia Machine",
+      "name": "anesthesiaMachine",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "X-ray Imaging",
+      "name": "xrayImaging",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Ultrasound Scanner",
+      "name": "ultrasoundScanner",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "MRI Scanning",
+      "name": "mriScanning",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Blood Pressure Monitor",
+      "name": "bloodPressureMonitor",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Patient Monitoring System",
+      "name": "patientMonitoringSystem",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Pulse Oximeter",
+      "name": "pulseOximeter",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Dialysis Machine",
+      "name": "dialysisMachine",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Sterilization Unit",
+      "name": "sterilizationUnit",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Pacemaker Control",
+      "name": "pacemakerControl",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Endoscope",
+      "name": "endoscope",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Surgical Light",
+      "name": "surgicalLight",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Incubator",
+      "name": "incubator",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "EEG Monitor",
+      "name": "eegMonitor",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Heart Rate Monitor",
+      "name": "heartRateMonitor",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Blood Gas Analyzer",
+      "name": "bloodGasAnalyzer",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Surgical Robot",
+      "name": "surgicalRobot",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Respiratory Support",
+      "name": "respiratorySupport",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Medical Imaging Software",
+      "name": "medicalImagingSoftware",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Temperature Sensor",
+      "name": "temperatureSensor",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Sterile Field Equipment",
+      "name": "sterileFieldEquipment",
+      "fieldType": "checkbox"
+    }
+  ]
+}

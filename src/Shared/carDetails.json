@@ -1,0 +1,170 @@
+{
+  "carDetails": [
+    {
+      "label": "Instrument Title",
+      "name": "instrumentTitle",
+      "fieldType": "text",
+      "required": true,
+      "column": 2,
+      "icon": "FaClipboardList"
+    },
+    {
+      "label": "Tagline",
+      "name": "tagline",
+      "fieldType": "text",
+      "column": 2,
+      "icon": "FaTag"
+    },
+    {
+      "label": "Original Price",
+      "name": "originalPrice",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaDollarSign"
+    },
+    {
+      "label": "Selling Price",
+      "name": "sellingPrice",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "FaMoneyBillAlt"
+    },
+    {
+      "label": "Category",
+      "name": "category",
+      "fieldType": "dropdown",
+      "options": ["Diagnostic", "Therapeutic", "Monitoring", "Life Support", "Medical Imaging", "Laboratory Equipment"],
+      "required": true,
+      "column": 1,
+      "icon": "FaMicroscope"
+    },
+    {
+      "label": "Condition",
+      "name": "condition",
+      "fieldType": "dropdown",
+      "required": true,
+      "options": ["New", "Used", "Refurbished"],
+      "column": 1,
+      "icon": "FaCheckCircle"
+    },
+    {
+      "label": "Manufacturer",
+      "name": "manufacturer",
+      "fieldType": "dropdown",
+      "required": true,
+      "options": [
+        "GE Healthcare",
+        "Philips",
+        "Siemens",
+        "Medtronic",
+        "Fujifilm",
+        "Johnson & Johnson",
+        "Roche",
+        "Baxter",
+        "B. Braun",
+        "Abbott"
+      ],
+      "column": 1,
+      "icon": "FaIndustry"
+    },
+    {
+      "label": "Model",
+      "name": "model",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "FaTools"
+    },
+    {
+      "label": "Year of Manufacture",
+      "name": "year",
+      "fieldType": "number",
+      "required": true,
+      "column": 1,
+      "icon": "FaCalendarAlt"
+    },
+    {
+      "label": "Power Supply",
+      "name": "powerSupply",
+      "fieldType": "dropdown",
+      "options": ["AC", "DC", "Battery", "Rechargeable"],
+      "required": true,
+      "column": 1,
+      "icon": "FaPlug"
+    },
+    {
+      "label": "Operation Type",
+      "name": "operationType",
+      "fieldType": "dropdown",
+      "options": ["Manual", "Automatic", "Semi-Automatic"],
+      "required": true,
+      "column": 1,
+      "icon": "FaCogs"
+    },
+    {
+      "label": "Safety Certifications",
+      "name": "safetyCertifications",
+      "fieldType": "dropdown",
+      "options": ["FDA Approved", "ISO 13485", "CE Marking", "UL Listed"],
+      "required": true,
+      "column": 1,
+      "icon": "FaCertificate"
+    },
+    {
+      "label": "Functionality",
+      "name": "functionality",
+      "fieldType": "dropdown",
+      "options": ["Diagnostic", "Therapeutic", "Monitoring", "Research"],
+      "required": true,
+      "column": 1,
+      "icon": "FaHeartbeat"
+    },
+    {
+      "label": "Dimension",
+      "name": "dimension",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaRuler"
+    },
+    {
+      "label": "Weight",
+      "name": "weight",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaWeightHanging"
+    },
+    {
+      "label": "Color",
+      "name": "color",
+      "fieldType": "dropdown",
+      "required": true,
+      "options": ["White", "Gray", "Black", "Silver", "Blue"],
+      "column": 2,
+      "icon": "FaPalette"
+    },
+    {
+      "label": "Serial Number",
+      "name": "serialNumber",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaBarcode"
+    },
+    {
+      "label": "Listing Type",
+      "name": "listingType",
+      "fieldType": "dropdown",
+      "options": ["For Sale", "Rent", "Lease", "Service"],
+      "column": 2,
+      "icon": "FaTags"
+    },
+    {
+      "label": "Listing Description",
+      "name": "listingDescription",
+      "fieldType": "textarea",
+      "required": true,
+      "column": 2,
+      "icon": "FaFileAlt"
+    }
+  ]
+}
