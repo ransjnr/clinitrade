@@ -1,5 +1,5 @@
 {
-  "carDetails": [
+  "instrumentDetails": [
     {
       "label": "Instrument Title",
       "name": "instrumentTitle",
@@ -34,7 +34,14 @@
       "label": "Category",
       "name": "category",
       "fieldType": "dropdown",
-      "options": ["Diagnostic", "Therapeutic", "Monitoring", "Life Support", "Medical Imaging", "Laboratory Equipment"],
+      "options": [
+        "Diagnostic",
+        "Therapeutic",
+        "Monitoring",
+        "Life Support",
+        "Medical Imaging",
+        "Laboratory Equipment"
+      ],
       "required": true,
       "column": 1,
       "icon": "FaMicroscope"

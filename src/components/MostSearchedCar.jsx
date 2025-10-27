@@ -9,47 +9,55 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { db } from "./../../configs";
-import { CarImages, CarListing } from "./../../configs/schema";
+import { InstrumentImages, InstrumentListing } from "./../../configs/schema";
 import { desc, eq } from "drizzle-orm";
 import Service from "@/Shared/Service";
 
 function MostSearchedCar() {
-  const [carList, setCarList] = useState([]);
+  const [instrumentList, setInstrumentList] = useState([]);
   useEffect(() => {
-    GetPopularCarList();
+    GetPopularInstrumentList();
   }, []);
 
-  const GetPopularCarList = async () => {
-    const result = await db
-      .select()
-      .from(CarListing)
-      .leftJoin(CarImages, eq(CarListing.id, CarImages.carListingId))
-      .orderBy(desc(CarListing.id))
-      .limit(10);
+  const GetPopularInstrumentList = async () => {
+    try {
+      const result = await db
+        .select()
+        .from(InstrumentListing)
+        .leftJoin(
+          InstrumentImages,
+          eq(InstrumentListing.id, InstrumentImages.carListingId)
+        )
+        .orderBy(desc(InstrumentListing.id))
+        .limit(10);
 
-    const resp = Service.FormatResult(result);
-    console.log(resp);
-    setCarList(resp);
+      console.log("Raw DB result:", result);
+      const resp = Service.FormatResult(result);
+      console.log("Formatted result:", resp);
+      setInstrumentList(resp);
+    } catch (error) {
+      console.error("Error fetching instrument list:", error);
+    }
   };
   return (
-    <div className="mx-24 hidden md:block">
-      <h2 className="font-bold text-3xl text-center mt-16 mb-7">
+    <div className="mx-4 md:mx-12 lg:mx-24 mt-8 md:mt-16 mb-8">
+      <h2 className="font-bold text-xl md:text-2xl lg:text-3xl text-center mb-4 md:mb-7 px-4">
         Most Searched Instruments
       </h2>
 
       <Carousel>
         <CarouselContent>
-          {carList.map((car, index) => (
+          {instrumentList.map((instrument, index) => (
             <CarouselItem
               key={index}
-              className="basis-1/2 md:basis-1/3 lg:basis-1/4"
+              className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
             >
-              <CarItem car={car} />
+              <CarItem car={instrument} />
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hidden md:flex" />
+        <CarouselNext className="hidden md:flex" />
       </Carousel>
     </div>
   );
